@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Input for Mortgage Amount -->
+    <EditText
+        android:id="@+id/etMortgageAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/mortgage_amount_hint"
+        android:inputType="numberDecimal" />
+
+    <!-- Input for Interest Rate -->
+    <EditText
+        android:id="@+id/etInterestRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/interest_rate_hint"
+        android:inputType="numberDecimal" />
+
+    <!-- Input for Loan Tenure -->
+    <EditText
+        android:id="@+id/etTenure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/loan_tenure_hint"
+        android:inputType="number" />
+
+    <!-- Button to Calculate EMI -->
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate_emi" />
+
+    <!-- TextView to Display the EMI Result -->
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/emi_result"
+        android:textSize="18sp"
+        android:paddingTop="16dp" />
+</LinearLayout>
